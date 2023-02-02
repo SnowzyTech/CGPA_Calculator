@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gp Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+      
+</head>
+<body> 
+    <div id="lineSec">
+        <div class="line1">
+               <p>Semester Gp</p>
+        </div>
+        <div class="line2">
+         <p>Cumulative Gp</p>
+        </div>
+    </div>
+    <!-- SEMESTER CGPA CALCULATOR -->
+    <section class="wrapper">
+        <div class='inner-wrapper'>
+        <div class="cgap-title">
+            <h1> Semester GPCalc</h1>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <input id="course-code"type='text'class='form-control'placeholder='Course Code'>
+            </div>
+                <div class="col">
+                <input id="course-unit"type='number'class='form-control'placeholder='Unit' min="1"max='15'>
+                </div>
+            <div class="col">
+                <select name="" id="grade" class="form-control">
+                    <option value="">Grade</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="button" id="add" class="btn btn-primary" value="Add">
+            </div>
+        </div>
+        <table id="table"class='table table-bordered display-none'>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Unit</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+            <tfoot id="tfoot">
+
+            </tfoot>
+        </table>
+        <div class="row">
+            <!-- <div class="col">
+                <input type="button" id="calc-gp" class='btn btn-success display-none' value="Calc GP">
+            </div> -->
+            <div class="col">
+                <input type="button" id="clear" class='btn btn-warning display-none' value="Clear">
+            </div>
+        </div>
+    </div>
+    </section>
+  <!-- END SEMESTER CGPA CALC-->
+
+
+
+
+    <!-- AVERGAE CGAP CALCULATOR-->
+    <section class="wrapper2" style="display: none;">
+        <div class="inner-wrapper">
+        <div class="cgap-title">
+            <h1 class="h1">Cumulative GPCalc</h1>
+        </div>
+
+        
+        <div class="form-row">
+            <!-- <div class="col">
+                <input id="course-code"type='text'class='form-control'placeholder='Course Code'>
+            </div> -->
+                <div class="column2">
+                <input id="course-unit2"type='number'class='form-control'placeholder='Semester GP' min="1"max='15'>
+                </div>
+            
+            <div class="col">
+                <input type="button" id="add2" class="btn btn-primary" value="Add">
+            </div>
+        </div>
+        <table id="table2"class='table table-bordered display-none'>
+            <thead>
+                <tr>
+                    <!-- <th>Course Code</th> -->
+                    <th>Semester GP</th>
+                    <!-- <th>Grade</th> -->
+                </tr>
+            </thead>
+            <tbody id="tbody2">
+            </tbody>
+            <tfoot id="tfoot2">
+
+            </tfoot>
+        </table>
+        <div class="row">
+            <!-- <div class="col">
+                <input type="button" id="calc-gp" class='btn btn-success display-none' value="Calc GP">
+            </div> -->
+            <div class="col">
+                <input type="button" id="clear2" class='btn btn-warning display-none' value="Clear">
+            </div>
+        </div>
+    </div>
+    </section>
+
+   
+    <script src="app.js"></script>
+</body>
+</html>
